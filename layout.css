@@ -1,0 +1,57 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.container {
+  background-color: lightgreen;
+  padding: 20px 40px 40px 20px;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  height: 100%;
+}
+
+.kuva {
+  width: 100%;
+  padding-bottom: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+figcaption {
+  text-align: center;
+  font-size: 2rem;
+}
+
+img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+}
+
+@media only screen and (min-width: 426px) {
+  .kuva {
+    width: 50%;
+    padding-bottom: 50%;
+  }
+}
+@media only screen and (min-width: 770px) {
+  .kuva {
+    width: 33.3%;
+    padding-bottom: 33.3%;
+  }
+}
+@media only screen and (min-width: 1051px) {
+  .kuva {
+    width: 25%;
+    padding-bottom: 25%;
+  }
+}
